@@ -4,6 +4,15 @@ require("@matterlabs/hardhat-zksync-solc");
 module.exports = {
   zksolc: {
     version: "1.3.9",
+    // defaultNetwork: 'sepolia',
+    // networks: {
+    //   hardhat: {},
+    //   Sepolia: {
+    //     // url: "https://zksync2-sepolia.zksync.dev",
+    //     url: "https://rpc.ankr.com/eth_sepolia",
+    //   },
+    // },
+    // },
     compilerSource: "binary",
     settings: {
       optimizer: {
@@ -33,6 +42,14 @@ module.exports = {
   },
   solidity: {
     version: "0.8.17",
+    defaultNetwork: 'sepolia',
+    networks: {
+      hardhat: {},
+      sepolia: {
+        // url: "https://zksync2-sepolia.zksync.dev",
+        url: "https://rpc.ankr.com/eth_sepolia",
+        accounts: [`0x${process.env.PRIVAT_KEY}`]      },
+    },
     settings: {
       optimizer: {
         enabled: true,

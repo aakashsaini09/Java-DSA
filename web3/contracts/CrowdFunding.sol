@@ -16,6 +16,7 @@ contract CrowdFunding {
     }
     mapping(uint256 => Campaign) public campaigns;
     uint256 public numberOfCampaings = 0;
+    
     function createCampaign (address _owner, string memory _title, string memory _description, uint256 _target, uint256 _deadline, string memory _image) public returns (uint256){
         Campaign storage campaign = campaigns[numberOfCampaings];
         require(campaign.deadline < block.timestamp, "The deadline should be a date in the future.");
@@ -45,6 +46,7 @@ contract CrowdFunding {
     function getDonators (uint256 _id) view public returns(address[] memory, uint256[] memory){
         return (campaigns[_id].donators, campaigns[_id].donations);
     }
+
     function getCampaigns () public view returns (Campaign[] memory) {
         Campaign[] memory allCampaigns = new Campaign[](numberOfCampaings);
         for(uint i = 0; i < numberOfCampaings; i++){
