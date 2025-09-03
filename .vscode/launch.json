@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Attach to Remote Program",
+            "request": "attach",
+            "hostName": "<The host name or ip address of remote debuggee>",
+            "port": "<debug port of remote debuggee>"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "Java-DSA_a39eb026"
+        },
+        {
+            "type": "java",
+            "name": "ArraysDemo",
+            "request": "launch",
+            "mainClass": "algos.ArraysDemo",
+            "projectName": "Java-DSA_a39eb026"
+        },
+        {
+            "type": "java",
+            "name": "Calculater",
+            "request": "launch",
+            "mainClass": "algos.Calculater",
+            "projectName": "Java-DSA_a39eb026"
+        },
+        {
+            "type": "java",
+            "name": "Fibo",
+            "request": "launch",
+            "mainClass": "algos.Fibo",
+            "projectName": "Java-DSA_a39eb026"
+        },
+        {
+            "type": "java",
+            "name": "Functions",
+            "request": "launch",
+            "mainClass": "algos.Functions",
+            "projectName": "Java-DSA_a39eb026"
+        },
+        {
+            "type": "java",
+            "name": "LeetCode",
+            "request": "launch",
+            "mainClass": "algos.LeetCode",
+            "projectName": "Java-DSA_a39eb026"
+        },
+        {
+            "type": "java",
+            "name": "Reverse",
+            "request": "launch",
+            "mainClass": "algos.Reverse",
+            "projectName": "Java-DSA_a39eb026"
+        },
+        {
+            "type": "java",
+            "name": "Searching",
+            "request": "launch",
+            "mainClass": "algos.Searching",
+            "projectName": "Java-DSA_a39eb026"
+        },
+        {
+            "type": "java",
+            "name": "Sorting",
+            "request": "launch",
+            "mainClass": "algos.Sorting",
+            "projectName": "Java-DSA_a39eb026"
+        }
+    ]
+}

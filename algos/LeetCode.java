@@ -1,3 +1,4 @@
+package algos;
 public class LeetCode {
     public static void main(String[] args) {
         int[] arr = {23, 3223, 234, 5, 423, 34, 434};
