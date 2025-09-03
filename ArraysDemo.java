@@ -15,16 +15,27 @@ public class ArraysDemo {
         // listofarray.set(0, 39);
         // listofarray.remove(1);
         // System.out.println(listofarray);
-        int[] arr = {12, 13, 14, 15, 16};
+        int[] arr = {11, 12, 13, 14, 15, 16, 332, 23, 32,122, 4};
         // swap(arr, 0, 4);
-        System.out.println("Swap array is: " + Arrays.toString(arr));
+        // System.out.println("Swap array is: " + Arrays.toString(arr));
         int val = max(arr);
         System.out.println("Max value in array: " + val);
+        reverse(arr);
+        System.out.println(Arrays.toString(arr));
     }
     static void swap(int[] arr, int indx1, int indx2) {
         int temp = arr[indx1];
         arr[indx1] = arr[indx2];
         arr[indx2] = temp;
+    }
+    static void reverse(int[] arr){
+        int start = 0;
+        int end = arr.length - 1;
+        while (start < end) {
+            swap(arr, start, end);
+            start++;
+            end--;
+        }
     }
     static int max(int[] arr) {
         int temp = 0;
