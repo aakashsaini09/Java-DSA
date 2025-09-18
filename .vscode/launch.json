@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SortingAlgos",
+            "request": "launch",
+            "mainClass": "SortingAlgos",
+            "projectName": "Java-DSA_a39eb026"
+        },
+        {
+            "type": "java",
             "name": "Attach to Remote Program",
             "request": "attach",
             "hostName": "<The host name or ip address of remote debuggee>",
